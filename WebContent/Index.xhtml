@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+    <h:head>
+        <title>.:: SIFISCON ::.</title>
+    </h:head>
+    <h:body>
+        <b:container>
+            <b:row>
+                <b:column>
+                    <h3>Bem vindo ao SIFISCON</h3>
+                    <h5>Escolha a opção abaixo:</h5>
+                    
+                    <h:commandButton value="Fornecedores"  onclick="location.href = 'http://localhost:8080/SIFISCON/ListarFornecedor.xhtml'" />
+                    <h:inputHidden />                                       
+                    
+						<input type="button" value="Processo" onclick="window.location = 'http://localhost:8080/SIFISCON/ListarProcesso.xhtml';"/>
+                </b:column>
+            </b:row>
+        </b:container>
+    </h:body>
+</html>

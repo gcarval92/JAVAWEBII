@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+	<title>.:: SIFISCON ::.</title>
+
+	<script type="text/javascript">
+		function redirecionar() {
+			alert("Fornecedor criado com sucesso!");
+		}
+	</script>
+	<a href="http://localhost:8080/SIFISCON/Index.xhtml"
+		onclick="YNconfirm()">Home</a>
+
+</h:head>
+<h:body>
+	<center>
+		Novo Fornecedor
+		<h:form>
+
+			<h:panelGrid columns="2">
+	CNPJ*: <h:inputText id="cnpjTxt" value="00.000.000.0000-00" />  
+	
+	Razão Social*: <h:inputText id="razaosocialTxt" value="Nome" />  
+	
+	Logradouro*: <h:inputText id="logradouroTxt"
+					value="Caixa de texto, máx. 100 caracteres" />  
+	
+	Número*: <h:inputText id="numeroTxt"
+					value="Caixa de texto, máx. 50 caracteres" />
+	 		
+	Complemento: <h:inputText id="complementoTxt"
+					value="Caixa de texto, máx. 50 caracteres" />
+	
+	Bairro*: <h:inputText id="bairroTxt"
+					value="Caixa de texto, máx. 100 caracteres" />
+	
+	CEP*: <h:inputText id="cepTxt" value="00.000-000" />
+	
+	Município*: <h:inputText id="municipioTxt"
+					value="Caixa de texto, máx. 200 caracteres" />
+	
+Unidade Federativa*: <select name="Combo_Estados">
+					<option value="AC">AC</option>
+					<option value="AL">AL</option>
+					<option value="AM">AM</option>
+					<option value="AP">AP</option>
+					<option value="BA">BA</option>
+					<option value="CE">CE</option>
+					<option value="DF">DF</option>
+					<option value="ES">ES</option>
+					<option value="GO">GO</option>
+					<option value="MA">MA</option>
+					<option value="MG">MG</option>
+					<option value="MS">MS</option>
+					<option value="MT">MT</option>
+					<option value="PA">PA</option>
+					<option value="PB">PB</option>
+					<option value="PE">PE</option>
+					<option value="PI">PI</option>
+					<option value="PR">PR</option>
+					<option value="RJ">RJ</option>
+					<option value="RN">RN</option>
+					<option value="RO">RO</option>
+					<option value="RR">RR</option>
+					<option value="RS">RS</option>
+					<option value="SC">SC</option>
+					<option value="SE">SE</option>
+					<option value="SP">SP</option>
+					<option value="TO">TO</option>
+				</select>
+
+				<h:inputHidden />
+	Inscrição Municipal: <h:inputText id="inscricaomunicipalTxt"
+					value="0.000.000-0" />
+	
+	Receita Bruta*: <h:inputText id="receitabrutaTxt" value="R$ 000.00" />
+
+				<h:inputHidden />
+
+				<button onclick="redirecionar();">Salvar Fornecedor</button>
+
+			</h:panelGrid>
+
+
+
+		</h:form>
+	</center>
+</h:body>
+</html>

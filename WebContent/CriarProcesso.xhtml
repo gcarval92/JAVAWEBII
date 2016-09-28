@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>.:: SIFISCON ::.</title>
+	
+	<script type="text/javascript">
+ 		function redirecionar() {
+ 			alert("Processo criado com sucesso!");
+       window.location.href='http://localhost:8080/SIFISCON/Index.xhtml';			
+ 		}
+		</script>
+		<a href="http://localhost:8080/SIFISCON/Index.xhtml" onclick="YNconfirm()">Home</a>
+
+</h:head>
+<h:body>
+	<center>
+		Novo Processo
+		<h:form>
+
+			<h:panelGrid columns="2">
+	CNPJ*: <h:inputText id="cnpjTxt" value="00.000.000.0000-00" />  
+	 		
+	Relato da Fiscalização*: <h:inputTextarea id="relatodafiscalizacaoTxt"
+					value="Caixa de texto longo, máx. 1000 caracteres" />
+	Data do Relato*: <h:inputText id="datadorelatoTxt"
+					value="DD/MM/AAAA" />
+	Fiscal Responsável*: <h:inputText id="ficalresponsavelTxt"
+					value="Caixa de texto longo, máx. 1000 caracteres" />
+
+				<h:inputHidden />
+
+
+				<input type="button" value="Buscar CNPJ"
+					onclick="window.location = 'http://localhost:8080/SIFISCON/BuscarCNPJ.xhtml'" />
+					
+					<button onclick="redirecionar();">Salvar Processo</button>
+			</h:panelGrid>
+
+
+
+		</h:form>
+	</center>
+</h:body>
+</html>

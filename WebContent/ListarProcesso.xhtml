@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:b="http://bootsfaces.net/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>.:: SIFISCON ::.</title>
+	
+</h:head>
+<h:body>
+	<center>
+		<h:form>
+
+			<h:dataTable value="" var="pateta" border="1">
+				<h:column>
+					<f:facet name="header">
+	Número do Processo
+	</f:facet>
+					<h:outputText value="000000" />
+				</h:column>
+
+				<h:column>
+					<f:facet name="header">
+	CNPJ
+	</f:facet>
+					<h:outputText value="00.000.000.0000-00" />
+				</h:column>
+
+				<h:column>
+					<f:facet name="header">
+	Razão Social
+	</f:facet>
+					<h:outputText value="Nome da razão social" />
+				</h:column>
+
+				<h:column>
+					<f:facet name="header">
+	Data do Relato
+	</f:facet>
+					<h:outputText value="DD/MM/AAAA" />
+				</h:column>
+
+				<h:column>
+					<f:facet name="header">
+	Fiscal Responsável
+	</f:facet>
+					<h:outputText value="Nome do fiscal responsável" />
+				</h:column>
+				
+				<h:column>
+					<f:facet name="header">
+	Editar/Excluir
+	</f:facet>
+					<h:outputText value="Editar/Excluir" />
+				</h:column>
+			
+			</h:dataTable>
+			<input type="button" value="Criar Processo" onclick="window.location = 'http://localhost:8080/SIFISCON/CriarProcesso.xhtml'"/>
+						
+			<input type="button" value="Criar Relatório de Processos" onclick="window.location = 'http://localhost:8080/SIFISCON/CriarRelatorioProcesso.xhtml'"/>
+			
+		</h:form>
+	</center>
+</h:body>
+</html>
